@@ -116,7 +116,58 @@ class MainTest {
         assertEquals(expected,actual);
     }
 
+    //  Test theo phân hoạch tương đương
+    @Test
+    public void _test0(){
+        int a = -100;
+        String expected = "Độ tuổi không hợp lệ. Xin nhập lại";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void _test1(){
+        int a = 5;
+        String expected = "Miễn Phí";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void _test2(){
+        int a = 15;
+        String expected = "30000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void _test3(){
+        int a = 40;
+        String expected = "50000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void _test4(){
+        int a = 90;
+        String expected = "30000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void _test5(){
+        int a = 125;
+        String expected = "Độ tuổi không hợp lệ. Xin nhập lại";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+
     //  Test theo bảng quyết định
+    @Test
+    public void Test0(){
+        int a = -10;
+        String expected = "Độ tuổi không hợp lệ. Xin nhập lại";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
     @Test
     public void Test1(){
         int a = 1000;
