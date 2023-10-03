@@ -3,7 +3,48 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
-    //  Test theo giá trị biên
+    /**
+     * Test theo dong dieu kien
+     */
+    @Test
+    public void C1(){
+        int a = 125;
+        String expected = "Độ tuổi không hợp lệ. Xin nhập lại";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void C2(){
+        int a = 3;
+        String expected = "Miễn Phí";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void C3(){
+        int a = 16;
+        String expected = "30000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void C4(){
+        int a = 28;
+        String expected = "50000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void C5(){
+        int a = 70;
+        String expected = "30000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+
+    /**
+     * Test theo giá trị biên
+     */
     @Test
     public void Out_Of_Min(){
         int a = -1;
@@ -116,7 +157,9 @@ class MainTest {
         assertEquals(expected,actual);
     }
 
-    //  Test theo phân hoạch tương đương
+    /**
+     * Test theo phân hoạch tương đương
+     */
     @Test
     public void _test0(){
         int a = -100;
@@ -160,7 +203,9 @@ class MainTest {
         assertEquals(expected, actual);
     }
 
-    //  Test theo bảng quyết định
+    /**
+     * Test theo bảng quyết định
+     */
     @Test
     public void Test0(){
         int a = -10;
