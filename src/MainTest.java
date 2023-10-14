@@ -3,6 +3,82 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
+
+    /**
+     * Test theo all use
+     */
+    @Test
+    public void allUsea1(){
+        int a = -1;
+        String expected = "Độ tuổi không hợp lệ. Xin nhập lại";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void allUsea2(){
+        int a = 5;
+        String expected = "Miễn Phí";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void allUsea3(){
+        int a = 16;
+        String expected = "30000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void allUsea4(){
+        int a = 28;
+        String expected = "50000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void allUsea5(){
+        int a = 70;
+        String expected = "30000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void allUseb1(){
+        int a = 130;
+        String expected = "Độ tuổi không hợp lệ. Xin nhập lại";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void allUseb2(){
+        int a = 5;
+        String expected = "Miễn Phí";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void allUseb3(){
+        int a = 16;
+        String expected = "30000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void allUseb4(){
+        int a = 28;
+        String expected = "50000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void allUseb5(){
+        int a = 70;
+        String expected = "30000 đồng";
+        String actual = Main.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+
+
     /**
      * Test theo dong dieu kien
      */
